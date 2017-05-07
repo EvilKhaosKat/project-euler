@@ -27,3 +27,6 @@ _testmain.go
 /.idea
 *.py[cod]
 *.iml
+
+# os-specific files
+/.DS_Store
