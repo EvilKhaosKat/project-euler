@@ -15,7 +15,7 @@ func main() {
 
 	sum := 0
 	for _, value := range multiples {
-		sum = sum + value
+		sum += value
 	}
 
 	fmt.Print(sum)
