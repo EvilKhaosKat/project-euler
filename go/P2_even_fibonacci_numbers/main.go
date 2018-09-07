@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const MAX_FIBONACCI_VALUE = 4000000
+const MaxFibonacciValue = 4000000
 
 func main() {
 	sum := 0
@@ -12,7 +12,7 @@ func main() {
 
 	for {
 		fibonacciValue := fibonacci.next()
-		if fibonacciValue > MAX_FIBONACCI_VALUE {
+		if fibonacciValue > MaxFibonacciValue {
 			break
 		}
 
@@ -41,7 +41,6 @@ func (f *fibonacciGenerator) init() {
 	f.currValue = 1
 }
 
-
 func isEven(num int) bool {
-	return num % 2 == 0
+	return num%2 == 0
 }

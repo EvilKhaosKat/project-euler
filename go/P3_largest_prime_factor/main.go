@@ -11,8 +11,8 @@ import (
 func main() {
 	number := 600851475143
 
-	primeFactors := []int{}
-	var maxFactorToCheck int = getMaxFactorToCheck(number)
+	var primeFactors []int
+	var maxFactorToCheck = getMaxFactorToCheck(number)
 	fmt.Printf("maxFactorToCheck:%d\n", maxFactorToCheck)
 
 	curNumber := number
