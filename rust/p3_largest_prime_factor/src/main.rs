@@ -1,5 +1,5 @@
 fn main() {
-    println!("LargestPrimeFactor={}", get_largest_prime_factor(600851475143));
+    println!("Largest prime factor: {}", get_largest_prime_factor(600851475143));
 }
 
 fn get_largest_prime_factor(number_to_check: i64) -> i64 {

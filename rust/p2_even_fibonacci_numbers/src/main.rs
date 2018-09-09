@@ -3,7 +3,7 @@ fn main() {
 
     let sum = get_even_fibonacci_sum(MAX_NUMBER);
 
-    println!("Sum={}", sum);
+    println!("Sum: {}", sum);
 }
 
 fn get_even_fibonacci_sum(max_number: i32) -> i32 {

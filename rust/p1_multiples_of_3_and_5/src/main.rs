@@ -3,7 +3,7 @@ fn main() {
 
     let sum = calculate_sum(MAX_NUMBER);
 
-    println!("Sum={}", sum);
+    println!("Sum: {}", sum);
 }
 
 fn calculate_sum(max_number: i32) -> i32 {
