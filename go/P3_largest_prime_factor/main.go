@@ -1,8 +1,8 @@
 package main
 
 import (
-	"math"
 	"fmt"
+	"math"
 )
 
 //using simple factors enumeration algorithm
@@ -11,16 +11,15 @@ import (
 func main() {
 	number := 600851475143
 
-	var primeFactors []int
+	var maxPrimeFactor int
 	var maxFactorToCheck = getMaxFactorToCheck(number)
-	fmt.Printf("maxFactorToCheck:%d\n", maxFactorToCheck)
 
 	curNumber := number
 	for {
 		for divider := 2; divider < maxFactorToCheck; divider++ {
 			if curNumber%divider == 0 {
 				curNumber /= divider
-				primeFactors = append(primeFactors, divider)
+				maxPrimeFactor = divider
 
 				break
 			}
@@ -31,20 +30,7 @@ func main() {
 		}
 	}
 
-	fmt.Printf("primeFactors:%v\n", primeFactors)
-	fmt.Printf("maxFactor:%d\n", getMaxValue(primeFactors))
-}
-
-func getMaxValue(values []int) int {
-	maxValue := 0
-
-	for _, value := range values {
-		if value > maxValue {
-			maxValue = value
-		}
-	}
-
-	return maxValue
+	fmt.Printf("maxFactor:%d\n", maxPrimeFactor)
 }
 
 func getMaxFactorToCheck(num int) int {

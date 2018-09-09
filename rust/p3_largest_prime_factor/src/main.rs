@@ -13,6 +13,10 @@ fn get_largest_prime_factor(number_to_check: i64) -> i64 {
             number = number / factor;
             max_factor = factor;
         }
+
+        if number == 1 {
+            break;
+        }
     }
 
     return max_factor;
